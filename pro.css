@@ -1,0 +1,1016 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    position: relative;
+}
+
+/*
+.navbar{
+    background-color: rgba(59, 57, 57, 0.712);
+    height: 70px;
+}*/
+
+.logo i,
+h1 {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.733);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+
+}
+
+#bar {
+    font-size: 40px;
+    margin: 10px;
+    display: none;
+
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 20px 10px;
+    user-select: none;
+}
+
+.links a {
+    font-size: 20px;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.links a:hover {
+    background-color: rgba(94, 87, 87, 0.644);
+    font-size: 25px;
+    transition: all 0.3s ease;
+}
+
+
+
+
+/*side navbar*/
+.side-navbar {
+    width: 250px;
+    height: 500px;
+    background-color: black;
+    color: aliceblue;
+    position: fixed;
+    margin-top: 10px;
+    left: -60%;
+    transition: 2s;
+    z-index: 999;
+}
+
+#xmark {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.side-navbar-links a {
+    text-decoration: none;
+    color: honeydew;
+    padding-left: 10px;
+}
+
+.side-navbar-links p {
+    display: flex;
+    justify-content: left;
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.side-navbar-links p:hover {
+    background-color: rgba(133, 129, 129, 0.884);
+    font-size: 30px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+
+}
+
+.header-part {
+    margin-top: 10px;
+}
+
+.header-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 30px;
+    border-radius: 30px 0 30px 0;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.header-image {
+    border-radius: 10px;
+}
+
+/*sevice*/
+.service {
+    margin-top: 10px;
+}
+
+.service-container-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-container-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-container-2 div {
+    background-color: grey;
+    border-radius: 10px;
+    padding: 10px
+}
+
+/*most purchase*/
+.h2 {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.h2:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.purchase {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.purchase-container {
+    position: relative;
+    flex-basis: 15%;
+}
+
+.purchase-container img {
+    margin: 10px;
+    border-color: lightgray;
+    border-radius: 2px;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+.purchase-container button {
+    background-color: lightslategray;
+    columns: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    left: 60px;
+    bottom: 40px;
+    border: none;
+}
+
+.purchase-container button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+}
+
+/* footer*/
+
+.footer-box-1 h2 {
+    font-size: 40px;
+    user-select: none;
+}
+
+.footer-box-1 p strong {
+    font-size: 25px;
+}
+
+.footer-icon-container i {
+    font-size: 20px;
+}
+
+/*collection*/
+.collection_heading {
+    text-align: center;
+    color: black;
+    margin: 20px 50px;
+    border: 2px solid blue;
+    border-radius: 20px;
+    user-select: none;
+}
+
+.collection {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    margin: 10px;
+}
+
+.collection img {
+    border: 5px solid lightgray;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.collection img:hover {
+    border-color: black;
+}
+
+.collection h2,
+a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.collection_container div {
+    background-color: black;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.collection_container div:hover {
+    border-color: white;
+
+}
+
+
+/* cantact page*/
+.cantact{
+    background:url("image/img56.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    margin-top: 30px;
+    justify-content: space-between;
+    
+    border: 3px solid #fff;
+    outline: 4px solid grey;
+    border-radius:20px 10px 20px 10px;
+
+}
+.cantact_heading h1{
+    
+    display: flex;
+    justify-content: center; 
+    color: black;
+    letter-spacing: 5px;
+    padding: 10px;
+}
+
+.name .name_box{
+    height: 50px;
+    font-size: 25px;
+    padding: 10px 20px;
+    border: transparent;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 40px;
+   
+}
+
+.email .email_box{
+    height: 50px;
+    font-size: 25px;
+    padding: 10px 20px ;
+    border: transparent;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 40px;
+   
+}
+.name .name_box:focus{
+    border-color: blue;
+}
+.email .email_box:focus{
+    border-color: blue;
+}
+.meg .Message_box{
+   width: 350px;
+   height: 50px;
+   outline: none;
+   font-size: 25px;
+   padding: 10px 20px;
+   border-radius: 10px;
+}
+.cantact h3{
+    letter-spacing: 5px;
+    color: #fff;
+    margin-top: 10px;
+
+}
+.cantact button{
+    font-size: 25px;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius:10px;
+    color: rgba(83, 80, 80, 0.438);
+}
+.cantact button:hover{
+    cursor: pointer;
+    transition: all 1s ease;
+    color: black;
+}
+
+
+/* S I G N---IN---BOX */
+ 
+
+.box{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form{
+    
+    width: 400px;
+    min-height: 400px;
+    padding: 32px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.form img{
+    display: block;
+    margin: auto;
+}
+.form-title{
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+
+.form-group{
+    height: 48px;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+.form-control{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: none;
+      border: 1px solid #a1a1a1;
+      outline: none;
+      padding: 15px;
+      border-radius: 3px;
+      z-index: 1;
+
+}
+
+.form-lable{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: #a1a1a1;
+    background-color:white;
+    padding: 0 6px;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.form-control:focus+ .form-lable{
+   top: -10px;
+   z-index: 10;
+   color: blue;
+  font-weight: 500;
+}
+.form-control:focus{
+    border: 1px solid blue;
+}
+
+.form-control:not(:focus):valid+label{
+    top: -10px;
+    z-index: 10;
+}
+
+.showlabel{
+    font-size: 14px;
+}
+
+.bottom-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+}
+.bottom-box a{
+    color: #1866c9;
+     text-decoration: none;
+     font-size: 14px;
+     font-weight: 500;
+}
+
+.form-button{
+    display: block;
+    padding: 12px 32px;
+    border: none;
+    background-color:#1866c9;
+    color: #fff;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.form-button:hover{
+    box-shadow: 0 10px 36px rgba(0,0,0,0.15);
+}
+
+.forget-password-oveley{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* K I D S-- C O L L E C T I O N */
+.shirts_heading,
+.pants_heading,
+.t_shirts_heading,
+.shose_heading {
+    text-align: center;
+
+    border: 2px solid blue;
+    border-radius: 30px;
+    margin: 40px 200px;
+    background-color: black;
+    color: white;
+}
+.pants_heading p:hover {
+    cursor: pointer;
+}
+
+.kids_shirts,
+.kids_pants,
+.kids_t_shirts,
+.kids_shose {
+
+    width: 1340px;
+    height: 1600px;
+    background-color: black;
+    color: white;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    text-align: center;
+    display: none;
+
+}
+
+.x_mark,
+.x_mark1,
+.x_mark2,
+.x_mark3 {
+    position: absolute;
+    font-size: 30px;
+    left: 10px;
+    top: 1px;
+    cursor: pointer;
+}
+
+
+.k_shirts_image,
+.k_pants_image,
+.k_t_shirts_image,
+.k_shose_image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.k_shirts_image div,
+.k_pants_image div,
+.k_t_shirts_image div,
+.k_shose_image div {
+    height: 210px;
+    width: 210px;
+    margin: 50px;
+}
+
+.kids_shirts button,
+.kids_pants button,
+.kids_t_shirts button,
+.kids_shose button {
+    font-size: 20px;
+    padding: 5px 15px;
+    border-radius: 10px 0 10px 0;
+
+}
+
+
+.kids_shirts button:hover,
+.kids_pants button:hover,
+.kids_t_shirts button:hover,
+.kids_shose button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+.k_shirts_image img,
+.k_pants_image img,
+.k_t_shirts_image img,
+.k_shose_image img {
+    border-radius: 15px;
+    border: 5px solid darkgray;
+}
+
+
+/*POP--UP */
+
+
+
+.popup-overley {
+    background-color: black;
+    opacity: 0.8;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 50px;
+    display: none;
+}
+
+.popup-box {
+    background-color: red;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    display: none;
+}
+
+.popup-box_image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.popup-box_image img {
+    border-radius: 10px;
+    border: 3px solid lightgreen;
+
+}
+
+.popup-box button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-width: 2px;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.popup-box button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-width: 4px;
+    border: transparent;
+}
+
+.buying_overley {
+    background-color: aqua;
+    opacity: 0.8;
+    width: 1350px;
+    height: 800px;
+    position: absolute;
+    top: 50px;
+    display: none;
+}
+
+.buying_popup-box {
+    background-color: dimgrey;
+    width: 400px;
+    height: 450px;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    display: none;
+}
+
+.buying_popup-box form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.buying_popup-box input {
+    margin: 20px;
+    width: 350px;
+    height: 30px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-size: 15px;
+}
+
+.buying_popup-box button {
+    margin: 20px;
+    padding: 10px 20px;
+    border: 3px solid lightgray;
+    font-size: 15px;
+}
+
+.buying_popup-box button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-width: 5px;
+}
+
+.last_overley {
+    width: 1350px;
+    height: 800px;
+    opacity: 0.7;
+    background-color: black;
+    position: absolute;
+    top: 50px;
+    display: none;
+}
+
+.last_popup-box {
+    width: 350px;
+    height: 450px;
+    background-color: lightcoral;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    border-radius: 10px;
+
+
+    padding-top: 20px;
+    outline: 3px solid black;
+    display: none;
+
+}
+
+.last_popup-box div {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.last_popup-box h1 {
+    font-size: 40px;
+    color: black;
+
+}
+
+.last_popup-box h2 {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.last_popup-box h3 {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.last_popup-box h4 {
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.divi {
+
+    margin: 10px 20px;
+    background-color: white;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+.last_popup-box button {
+    margin-left: 40%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    color: white;
+
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    margin-top: 10px;
+
+}
+
+.last_popup-box button:hover {
+    cursor: pointer;
+    background-color: darkgray;
+    color: lightskyblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.footer {
+    margin-top: 20px;
+    padding: 40px;
+    background-color: black;
+    color: white;
+    width: 1270px;
+    position: absolute;
+    margin-left: 20px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.footer-icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.footer-icon-container i:hover {
+    cursor: pointer;
+}
+
+.mail:hover {
+    text-decoration: underline;
+}
+
+
+/*media query*/
+
+
+
+@media screen and (max-width:1300px) {
+    .footer {
+        transition: all 1s ease;
+        height: auto;
+        width: auto
+    }
+
+    .kids_shirts,
+    .kids_pants,
+    .kids_t_shirts,
+    .kids_shose {
+        transition: all 1s ease;
+        height: auto;
+        width: auto;
+    }
+
+
+    .popup-box,
+    .buying_popup-box,
+    .last_popup-box {
+        transition: all 1s ease;
+        height: auto;
+        width: auto;
+    }
+    .collection{
+        transition: all 1s ease;
+        height: auto;
+        width: auto;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+    .links {
+        margin-top: 5px;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    #bar {
+        display: block;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .header-image {
+        display: none;
+    }
+
+    .service-container-2 {
+        display: block;
+        margin-top: 10px;
+    }
+
+    
+    .shirts_heading,
+    .pants_heading,
+    .t_shirts_heading,
+    .shose_heading {
+        transition: all 1s ease;
+        width: 400px;
+
+    }
+
+    .popup-box,
+    .buying_popup-box,
+    .last_popup-box {
+        transition: all 1s ease;
+        width: 300px;
+        left: 250px;
+
+    }
+
+    .buying_popup-box input {
+        transition: all 1s ease;
+        height: auto;
+        width: auto;
+    }
+
+    .popup-box img {
+        transition: all 1s ease;
+        height: 150px;
+        width: 150px;
+    }
+
+    .buying_popup-box button {
+        border: none;
+        transition: all 1s ease;
+        width: auto;
+        height: auto;
+    }
+
+    .last_popup-box {
+        transition: all 1s ease;
+        font-size: auto;
+    }
+    .collection{
+        flex-wrap: wrap;
+    }
+    .collection_container{
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width:640px) {
+
+    .k_shirts_image div,
+    .k_pants_image div,
+    .k_t_shirts_image div,
+    .k_shose_image div {
+        margin: 25px;
+        margin-top: 50px;
+    }
+
+    .buying_popup-box,
+    .last_popup-box {
+        transition: all 1s ease;
+        height: 400px;
+        width: 250px;
+        left: 200px;
+    }
+
+    .popup-box {
+        transition: all 1s ease;
+        width: 250px;
+        left: 200px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .shirts_heading,
+    .pants_heading,
+    .t_shirts_heading,
+    .shose_heading {
+        transition: all 1s ease;
+        width: 300px;
+    }
+
+    .buying_popup-box,
+    .last_popup-box {
+        transition: all 1s ease;
+        height: 500px;
+        width: 250px;
+        left: 150px;
+    }
+
+    .popup-box {
+        transition: all 1s ease;
+        width: 250px;
+        left: 150px;
+    }
+
+    .last_popup-box button {
+        transition: all 1s ease;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .collection_container{
+        transition: all 1s ease;
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width:540px) {
+
+    .k_shirts_image div,
+    .k_pants_image div,
+    .k_t_shirts_image div,
+    .k_shose_image div {
+        transition: all 1s ease;
+        margin-left: 140px;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .shirts_heading,
+    .pants_heading,
+    .t_shirts_heading,
+    .shose_heading {
+        transition: all 1s ease;
+        margin-left: 100px;
+    }
+
+    .kids_shirts,
+    .kids_pants,
+    .kids_t_shirts,
+    .kids_shose {
+        transition: all 1s ease;
+        margin-left: 50px;
+    }
+
+}
+
+@media screen and (min-width:800px) {
+    .side-navbar {
+        display: none;
+    }
+
+    .popup-box img {
+        transition: all 1s ease;
+        height: 200px;
+        width: 200px;
+    }
+    .cantact h3{
+        color: black;
+    }
+
+}
